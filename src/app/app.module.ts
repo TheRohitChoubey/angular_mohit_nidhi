@@ -3,26 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './pages/header/header.component';
-import { FooterComponent } from './pages/footer/footer.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { EventsComponent } from './components/events/events.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { FamilyComponent } from './components/family/family.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent
+    HomeComponent,
+    AboutComponent,
+    EventsComponent,
+    GalleryComponent,
+    FamilyComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    FlexLayoutModule
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -625,7 +625,7 @@ a:hover {
     width: 100%;
     position: relative;
     padding: 0px;
-    /* background: url("../images/banner-bg.jpg") no-repeat; */
+    background: url("../images/banner-bg.jpg") no-repeat;
     background-size: 100% 100%;
     background-size: cover;
     position: relative;
